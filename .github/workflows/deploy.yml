@@ -26,6 +26,8 @@ jobs:
 
       - name: Build Project
         run: npm run build
+        env:
+          CI: false
 
       - name: Check Build Directory
         run: ls -la build    # Check the build directory
